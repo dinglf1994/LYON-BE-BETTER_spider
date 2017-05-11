@@ -2638,7 +2638,6 @@ class phpspider
         }
         $display_str .= 'task number: ' . self::$tasknum . "\n";
         $display_str .= 'load average: ' . implode(", ", $loadavg) . "\n";
-        $display_str .= "document: https://doc.phpspider.org\n";
 
         $display_str .= $this->display_task_ui();
 
