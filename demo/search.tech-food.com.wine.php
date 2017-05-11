@@ -80,7 +80,7 @@ $configs = array(
 		// 编辑
         array(
             'name' => "article_author",
-            'selector' => "//span[@class='dibu_sr']",
+            'selector' => "//div[@class='dibu_sr']",
             'required' => false,
             'repeated'	=>	true,
         ),
@@ -109,7 +109,7 @@ $spider->on_scan_page = function($page, $content, $phpspider)
     $i = 0;
     $j = 0;
     $stop = true;
-    while ($i < 3) {
+    while ($i < 10001) {
         $j = $i * 10;
         $url = "http://search.tech-food.com/ns.aspx?q=%E9%85%92&t=p&l=c&start={$j}";
         $phpspider->add_url($url);
@@ -132,7 +132,7 @@ $spider->on_extract_field = function ($fieldname, $data, $page)
     // 去除内容页的html标签
     $contentSave = '';
     if ($fieldname == 'article_author') {
-        $data = str_replace('：', '', substr(util::trimall(strip_tags(html_entity_decode($data), ENT_QUOTES)), -9));
+        $data = str_replace('责任编辑：', '', $data);
         return $data;
     }
     if ($fieldname == 'article_source' || $fieldname == 'article_content' || $fieldname == 'article_title' || $fieldname == 'article_pubtime_str') {
