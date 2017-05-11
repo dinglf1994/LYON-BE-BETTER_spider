@@ -109,7 +109,7 @@ $spider->on_scan_page = function($page, $content, $phpspider)
     $i = 0;
     $j = 0;
     $stop = true;
-    while ($i < 1001) {
+    while ($i < 3) {
         $j = $i * 10;
         $url = "http://search.tech-food.com/ns.aspx?q=%E9%85%92&t=p&l=c&start={$j}";
         $phpspider->add_url($url);
@@ -137,17 +137,12 @@ $spider->on_extract_field = function ($fieldname, $data, $page)
     }
     if ($fieldname == 'article_source' || $fieldname == 'article_content' || $fieldname == 'article_title' || $fieldname == 'article_pubtime_str') {
         // 如果内容为空，判断为其他类型需另外
-        if ($fieldname == 'article_title' && empty($data)) {
-            $data = html_entity_decode(selector::select($page['raw'], "//h1[@id='title']"), ENT_QUOTES);
+        if ($fieldname == 'article_pubtime_str') {
+            preg_match('/\d{4}-\d+-\d+ \d+:\d+:\d+/', $data, $out);
+            $data = $out;
         }
-        if ($fieldname == 'article_content' && empty($data)) {
-            $data = html_entity_decode(selector::select($page['raw'], "//div[@class='article']/p/span"), ENT_QUOTES);
-        }
-        if ($fieldname == 'article_pubtime_str' && empty($data)) {
-            $data = html_entity_decode(selector::select($page['raw'], "//span[@class='time']"), ENT_QUOTES);
-        }
-        if ($fieldname == 'article_source' && empty($data)) {
-            $data = html_entity_decode(selector::select($page['raw'], "//div[@class='h-info']"), ENT_QUOTES);
+        if ($fieldname == 'article_source') {
+            $data = str_replace('来源：', '', strstr($data, '来源：'));
         }
         if (is_array($data)) {
             foreach ($data as $value) {

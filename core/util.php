@@ -986,6 +986,12 @@ class util
         }
         return $params;
     }
+    public static function trimall($str)//删除空格
+    {
+        $qian=array(" ","　","\t","\n","\r");
+        $hou=array("","","","","");
+        return str_replace($qian,$hou,$str);
+    }
 }
 
 
