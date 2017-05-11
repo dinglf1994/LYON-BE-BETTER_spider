@@ -18,11 +18,11 @@ if (!empty($pathinfo['dirname']))
         }
     }
 }
-
-$word = requests::$searchWorld = urlencode('奶制品');
+$w = '奶制品';
+$word = requests::$searchWorld = urlencode($w);
 
 $configs = array(
-    'name' => "中国食品搜索-{$word}",
+    'name' => "中国食品搜索-{$w}",
     'tasknum' => 1,
     //'save_running_state' => true,
     'log_show' => false,

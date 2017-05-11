@@ -2,7 +2,7 @@
 // +----------------------------------------------------------------------
 // | PHPSpider [ A PHP Framework For Crawler ]
 // +----------------------------------------------------------------------
-// | Copyright (c) 2006-2014 https://doc.phpspider.org All rights reserved.
+// | Copyright (c) 2006-2014 https://github.com/dinglf1994 All rights reserved.
 // +----------------------------------------------------------------------
 // | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
