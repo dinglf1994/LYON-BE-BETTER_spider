@@ -109,7 +109,7 @@ $spider->on_scan_page = function($page, $content, $phpspider)
     $i = 0;
     $j = 0;
     $stop = true;
-    while ($i < 10001) {
+    while ($i < 1001) {
         $j = $i * 10;
         $url = "http://search.tech-food.com/ns.aspx?q=%E9%85%92&t=p&l=c&start={$j}";
         $phpspider->add_url($url);
