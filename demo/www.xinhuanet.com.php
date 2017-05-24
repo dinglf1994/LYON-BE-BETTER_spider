@@ -66,7 +66,7 @@ $configs = array(
     ),
     'export' => array(
         'type' => 'db',
-        'table' => 'cs_article',
+        'table' => 'cs_article_search',
     ),
     'fields' => array(
         // 标题
