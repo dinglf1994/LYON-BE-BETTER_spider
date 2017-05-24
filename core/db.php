@@ -78,7 +78,7 @@ class db
      * 
      * @param array $config
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2016-03-29 00:51
      */
     public static function reset_connect($config = array())

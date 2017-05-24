@@ -66,7 +66,7 @@ class requests
      *    'https': 'socks5://user:pass@host:port'
      *)
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2016-09-18 10:17
      */
     public static function set_proxies($proxies)
@@ -231,7 +231,7 @@ class requests
      * 
      * @param mixed $ip
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2016-11-16 11:06
      */
     public static function set_client_ips($ips)

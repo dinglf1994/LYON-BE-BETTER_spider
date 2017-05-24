@@ -21,7 +21,7 @@ class cache
      * 获取实例
      * 
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2016-04-10 22:55
      */
     public static function init()

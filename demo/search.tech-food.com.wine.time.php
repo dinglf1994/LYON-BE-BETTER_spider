@@ -158,6 +158,8 @@ $spider->on_extract_field = function ($fieldname, $data, $page)
 };
 $spider->on_extract_page = function($page, $fileds) {
     $fileds['article_url'] = $page['request']['url'];
+    $fileds['article_md5url'] = md5($page['request']['url']);
+    $fileds['label'] = 2;
     return $fileds;
 };
 $spider->start();

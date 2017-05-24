@@ -78,7 +78,7 @@ class selector
      * @param mixed $html
      * @param mixed $selector
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2016-10-26 12:53
      */
     private static function _xpath_select($html, $selector, $remove = false)
@@ -164,7 +164,7 @@ class selector
      * @param mixed $html
      * @param mixed $selector
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2016-10-26 12:53
      */
     private static function _regex_select($html, $selector, $remove = false)
@@ -215,7 +215,7 @@ class selector
      * @param mixed $html
      * @param mixed $selector
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2016-10-26 12:53
      */
     private static function _css_select($html, $selector, $remove = false)

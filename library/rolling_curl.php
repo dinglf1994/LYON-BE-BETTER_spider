@@ -6,8 +6,8 @@
  * For full copyright and license information, please see the MIT-LICENSE.txt
  * Redistributions of files must retain the above copyright notice.
  *
- * @author seatle<seatle@foxmail.com>
- * @copyright seatle<seatle@foxmail.com>
+ * @author Dinglf<Dinglf@foxmail.com>
+ * @copyright Dinglf<Dinglf@foxmail.com>
  * @link http://www.epooll.com/
  * @license http://www.opensource.org/licenses/mit-license.php MIT License
  */
@@ -157,7 +157,7 @@ class rolling_curl
      * 
      * @param mixed $http_raw
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2016-09-18 10:17
      */
     public function set_http_raw($http_raw = false)

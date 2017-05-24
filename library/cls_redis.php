@@ -139,7 +139,7 @@ class cls_redis
      * @param mixed $value  值
      * @param int $expire   过期时间，单位：秒
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      */
     public static function set($key, $value, $expire = 0)
@@ -182,7 +182,7 @@ class cls_redis
      * @param mixed $value  值
      * @param int $expire   过期时间，单位：秒
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      */
     public static function setnx($key, $value, $expire = 0)
@@ -231,7 +231,7 @@ class cls_redis
      * @param int $expire   当前锁的最大生存时间(秒)，必须大于0，超过生存时间系统会自动强制释放锁
      * @param int $interval   获取锁失败后挂起再试的时间间隔(微秒)
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2016-10-30 23:56
      */
     public static function lock($name, $value = 1, $expire = 5, $interval = 100000)
@@ -286,7 +286,7 @@ class cls_redis
      * 
      * @param mixed $key
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      */
     public static function get($key)
@@ -319,7 +319,7 @@ class cls_redis
      * 
      * @param mixed $key
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      */
     public static function del($key)
@@ -352,7 +352,7 @@ class cls_redis
      * 
      * @param mixed $key
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      */
     public static function type($key)
@@ -397,7 +397,7 @@ class cls_redis
      * @param mixed $key
      * @param int $integer
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-18 11:28
      */
     public static function incr($key, $integer = 0)
@@ -438,7 +438,7 @@ class cls_redis
      * @param mixed $key
      * @param int $integer
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-18 11:28
      */
     public static function decr($key, $integer = 0)
@@ -479,7 +479,7 @@ class cls_redis
      * @param mixed $key
      * @param mixed $value
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-18 11:28
      */
     public static function append($key, $value)
@@ -514,7 +514,7 @@ class cls_redis
      * @param mixed $start
      * @param mixed $end
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-18 11:28
      */
     public static function substr($key, $start, $end)
@@ -547,7 +547,7 @@ class cls_redis
      * 
      * @param mixed $index
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-18 11:28
      */
     public static function select($index)
@@ -580,7 +580,7 @@ class cls_redis
      * 
      * @param mixed $key
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-18 11:28
      */
     public static function dbsize()
@@ -612,7 +612,7 @@ class cls_redis
      * flushdb 删除当前选择数据库中的所有key
      * 
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-18 11:28
      */
     public static function flushdb()
@@ -644,7 +644,7 @@ class cls_redis
      * flushall 删除所有数据库中的所有key
      * 
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-18 11:28
      */
     public static function flushall()
@@ -677,7 +677,7 @@ class cls_redis
      * 
      * @param mixed $is_bgsave 将数据异步保存到磁盘
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-18 11:28
      */
     public static function save($is_bgsave = false)
@@ -716,7 +716,7 @@ class cls_redis
      * info 提供服务器的信息和统计
      * 
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-18 11:28
      */
     public static function info()
@@ -748,7 +748,7 @@ class cls_redis
      * slowlog 慢查询日志
      * 
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-18 11:28
      */
     public static function slowlog($command = 'get', $len = 0)
@@ -787,7 +787,7 @@ class cls_redis
      * lastsave 返回上次成功将数据保存到磁盘的Unix时戳
      * 
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-18 11:28
      */
     public static function lastsave()
@@ -821,7 +821,7 @@ class cls_redis
      * @param mixed $key
      * @param mixed $value
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      */
     public static function lpush($key, $value)
@@ -855,7 +855,7 @@ class cls_redis
      * @param mixed $key
      * @param mixed $value
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      */
     public static function rpush($key, $value)
@@ -888,7 +888,7 @@ class cls_redis
      * 
      * @param mixed $key
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      */
     public static function lpop($key)
@@ -921,7 +921,7 @@ class cls_redis
      * 
      * @param mixed $key
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      */
     public static function rpop($key)
@@ -954,7 +954,7 @@ class cls_redis
      * 
      * @param mixed $key
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      */
     public static function lsize($key)
@@ -988,7 +988,7 @@ class cls_redis
      * @param mixed $key
      * @param int $index
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      */
     public static function lget($key, $index = 0)
@@ -1023,7 +1023,7 @@ class cls_redis
      * @param mixed $start
      * @param mixed $end
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      */
     public static function lrange($key, $start, $end)
@@ -1057,7 +1057,7 @@ class cls_redis
      * @param mixed $key
      * @param mixed $length
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      */
     public static function rlist($key, $length)
@@ -1092,7 +1092,7 @@ class cls_redis
      * 
      * @param mixed $key
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      * 查找符合给定模式的key。
      * KEYS *命中数据库中所有key。
@@ -1134,7 +1134,7 @@ class cls_redis
      * -2：key不存在
      * @param mixed $key
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      */
     public static function ttl($key)
@@ -1168,7 +1168,7 @@ class cls_redis
      * @param mixed $key
      * @param mixed $expire
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      */
     public static function expire($key, $expire)
@@ -1201,7 +1201,7 @@ class cls_redis
      * 
      * @param mixed $key
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      */
     public static function exists($key)
@@ -1233,7 +1233,7 @@ class cls_redis
      * ping 检查当前redis是否存在且是否可以连接上
      * 
      * @return void
-     * @author seatle <seatle@foxmail.com> 
+     * @author Dinglf <Dinglf@foxmail.com>
      * @created time :2015-12-13 01:05
      */
     //protected static function ping()

@@ -440,7 +440,7 @@ class phpspider
      * @param mixed $url
      * @param mixed $options
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-18 10:17
      */
     public function add_url($url, $options = array(), $depth = 0)
@@ -489,7 +489,7 @@ class phpspider
      * 
      * @param mixed $url
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-10-12 19:06
      */
     public function is_scan_page($url)
@@ -507,7 +507,7 @@ class phpspider
      * 
      * @param mixed $url
      * @return string
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-10-12 19:06
      */
     public function is_list_page($url)
@@ -532,7 +532,7 @@ class phpspider
      * 
      * @param mixed $url
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-10-12 19:06
      */
     public function is_content_page($url)
@@ -689,7 +689,7 @@ class phpspider
      * 检查是否终止当前进程
      *
      * @return void
-     * @author seatle <https://github.com/dinglf1994>
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-11-16 11:06
      */
     public function check_terminate()
@@ -1025,7 +1025,7 @@ class phpspider
      * 
      * @param mixed $collect_url    要抓取的链接
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-18 10:17
      */
     public function collect_page() 
@@ -1175,7 +1175,7 @@ class phpspider
      * @param mixed $url
      * @param mixed $link
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-18 10:17
      */
     public function request_url($url, $link = array())
@@ -1313,7 +1313,7 @@ class phpspider
      * @param mixed $html           HTML内容
      * @param mixed $collect_url    抓取的URL, 用来拼凑完整页面的URL
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-18 10:17
      */
     public function get_urls($html, $collect_url, $depth = 0) 
@@ -1405,7 +1405,7 @@ class phpspider
      * @param mixed $url            要检查的URL
      * @param mixed $collect_url    从那个URL页面得到上面的URL
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-23 17:13
      */
     public function fill_url($url, $collect_url)
@@ -1542,7 +1542,7 @@ class phpspider
      * 连接对象压缩
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-11-05 18:58
      */
     public function link_compress($link)
@@ -1601,7 +1601,7 @@ class phpspider
      * 
      * @param mixed $link
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-11-05 18:58
      */
     public function link_uncompress($link)
@@ -1627,7 +1627,7 @@ class phpspider
      * 
      * @param mixed $html
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-18 10:17
      */
     public function get_html_fields($html, $url, $page) 
@@ -1713,7 +1713,7 @@ class phpspider
      * @param mixed $html
      * @param mixed $page
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-23 17:13
      */
     public function get_fields($confs, $html, $url, $page) 
@@ -1879,7 +1879,7 @@ class phpspider
      * 验证导出
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-10-02 23:37
      */
     public function check_export()
@@ -1989,7 +1989,7 @@ class phpspider
      * 设置任务状态, 主进程和子进程每成功采集一个页面后调用
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-10-30 23:56
      */
     public function set_task_status()
@@ -2023,7 +2023,7 @@ class phpspider
      * 删除任务状态
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-11-16 11:06
      */
     public function del_task_status($serverid, $taskid)
@@ -2040,7 +2040,7 @@ class phpspider
      * 获得任务状态, 主进程才会调用
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-10-30 23:56
      */
     public function get_task_status($serverid, $taskid)
@@ -2059,7 +2059,7 @@ class phpspider
      * 获得任务状态, 主进程才会调用
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-10-30 23:56
      */
     public function get_task_status_list($serverid = 1, $tasknum)
@@ -2084,7 +2084,7 @@ class phpspider
      * 添加当前服务器信息到服务器列表
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-11-16 11:06
      */
     public function add_server_list($serverid, $tasknum)
@@ -2122,7 +2122,7 @@ class phpspider
      * 从服务器列表中删除当前服务器信息
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-11-16 11:06
      */
     public function del_server_list($serverid)
@@ -2156,7 +2156,7 @@ class phpspider
      * 
      * @param mixed $url
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-23 17:13
      */
     public function get_collect_url_num()
@@ -2177,7 +2177,7 @@ class phpspider
      * 
      * @param mixed $url
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-23 17:13
      */
     public function get_collected_url_num()
@@ -2198,7 +2198,7 @@ class phpspider
      * 
      * @param mixed $url
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-23 17:13
      */
     public function incr_collected_url_num($url)
@@ -2217,7 +2217,7 @@ class phpspider
      * 从队列左边插入
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-23 17:13
      */
     public function queue_lpush($link = array(), $allowed_repeat = false)
@@ -2273,7 +2273,7 @@ class phpspider
      * 从队列右边插入
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-23 17:13
      */
     public function queue_rpush($link = array(), $allowed_repeat = false)
@@ -2331,7 +2331,7 @@ class phpspider
      * 还可以按顺序采集列表页
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-23 17:13
      */
     public function queue_lpop()
@@ -2352,7 +2352,7 @@ class phpspider
      * 从队列右边取出
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-23 17:13
      */
     public function queue_rpop()
@@ -2373,7 +2373,7 @@ class phpspider
      * 队列长度
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-23 17:13
      */
     public function queue_lsize()
@@ -2393,7 +2393,7 @@ class phpspider
      * 采集深度加一
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-23 17:13
      */
     public function incr_depth_num($depth)
@@ -2425,7 +2425,7 @@ class phpspider
      * 获得采集深度
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-23 17:13
      */
     public function get_depth_num()
@@ -2445,7 +2445,7 @@ class phpspider
      * 提取到的field数目加一
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-23 17:13
      */
     public function incr_fields_num()
@@ -2466,7 +2466,7 @@ class phpspider
      * 提取到的field数目
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-23 17:13
      */
     public function get_fields_num()
@@ -2488,7 +2488,7 @@ class phpspider
      * @param mixed $html
      * @param mixed $selector
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-18 10:17
      */
     public function get_fields_xpath($html, $selector, $fieldname) 
@@ -2507,7 +2507,7 @@ class phpspider
      * @param mixed $html
      * @param mixed $selector
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-18 10:17
      */
     public function get_fields_regex($html, $selector, $fieldname) 
@@ -2527,7 +2527,7 @@ class phpspider
      * @param mixed $selector
      * @param mixed $fieldname
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-18 10:17
      */
     public function get_fields_css($html, $selector, $fieldname) 
@@ -2544,7 +2544,7 @@ class phpspider
      * 清空shell输出内容
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-11-16 11:06
      */
     public function clear_echo()
@@ -2563,7 +2563,7 @@ class phpspider
      * @param mixed $message
      * @param mixed $force_clear_lines
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-11-16 11:06
      */
     public function replace_echo($message, $force_clear_lines = NULL) 
@@ -2769,7 +2769,7 @@ class phpspider
      * 判断是否附件文件
      * 
      * @return void
-     * @author seatle <https://github.com/dinglf1994> 
+     * @author Dinglf <https://github.com/dinglf1994>
      * @created time :2016-09-23 17:13
      */
     //public function is_attachment_file($url)
