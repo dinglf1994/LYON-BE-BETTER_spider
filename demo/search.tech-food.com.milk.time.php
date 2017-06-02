@@ -3,10 +3,9 @@ ini_set("memory_limit", "1024M");
 require dirname(__FILE__).'/../core/init.php';
 
 define('APP_PATH', dirname(__FILE__));
-define('DATA_PATH', APP_PATH. '/../../search.tech-food.com/');
-define('HTML_PATH', DATA_PATH. '/html/');
+define('DATA_PATH', APP_PATH. '/../../search.tech-food.com/data/');
 
-$pathinfo = pathinfo(HTML_PATH.'readme.md');
+$pathinfo = pathinfo(DATA_PATH.'readme.md');
 if (!empty($pathinfo['dirname']))
 {
     if (file_exists($pathinfo['dirname']) === false)
@@ -146,7 +145,8 @@ $spider->on_extract_page = function($page, $fileds) {
     $fileds['article_url'] = $page['request']['url'];
     $fileds['article_md5url'] = md5($page['request']['url']);
     $fileds['label'] = 4;
-    file_put_contents(DATA_PATH. $fileds['article_md5url']. '.txt', $fileds['article_content']);
+	$data = $content = iconv("utf-8","gb2312//IGNORE",$fileds['article_content']);
+    file_put_contents(DATA_PATH. $fileds['article_md5url']. '.txt', $data);
     return $fileds;
 };
 $spider->start();
